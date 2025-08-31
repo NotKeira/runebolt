@@ -1,0 +1,29 @@
+{
+  "name": "@runebolt/build",
+  "version": "0.1.0",
+  "description": "RuneBolt build system and webpack configuration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Keira Hopkins <open-source@keirahopkins.co.uk>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NotKeira/runebolt.git"
+  },
+  "dependencies": {
+    "@runebolt/types": "workspace:*",
+    "@types/node": "24.3.0",
+    "html-webpack-plugin": "^5.6.4",
+    "ts-loader": "^9.5.4",
+    "webpack": "^5.101.3"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  }
+}

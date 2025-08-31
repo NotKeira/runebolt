@@ -1,0 +1,24 @@
+{
+  "name": "@runebolt/core",
+  "version": "0.1.0",
+  "description": "RuneBolt core server functionality",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Keira Hopkins <open-source@keirahopkins.co.uk>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NotKeira/runebolt.git"
+  },
+  "dependencies": {
+    "@runebolt/types": "workspace:*",
+    "@types/node": "24.3.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  }
+}

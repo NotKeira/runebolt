@@ -1,0 +1,24 @@
+{
+  "name": "@runebolt/dev-server",
+  "version": "0.1.0",
+  "description": "RuneBolt development server with hot reloading",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Keira Hopkins <open-source@keirahopkins.co.uk>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NotKeira/runebolt.git"
+  },
+  "dependencies": {
+    "@runebolt/build": "workspace:*",
+    "@runebolt/types": "workspace:*",
+    "@types/node": "24.3.0",
+    "webpack-dev-middleware": "^7.4.2",
+    "webpack-hot-middleware": "^2.26.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  }
+}
